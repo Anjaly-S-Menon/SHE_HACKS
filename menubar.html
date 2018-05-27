@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+<body id="myPage">
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 1000px;
+    background-color: #f1f1f1;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color:#f1f1f1;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+body{
+background-size:cover;}
+h4{
+color:#3333FF;
+background-color:#FFFFFF;}
+</style>
+<script>
+// Script for side navigation
+function w3_open() {
+    var x = document.getElementById("mySidebar");
+    x.style.width = "300px";
+    x.style.paddingTop = "10%";
+    x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+</head>
+<body >
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+ <div id="freeze">
+
+ <div style="float:right"><p align="right" style="margin-right:6px">bSafe<br>bsafe@sfk.in<br>+91373947329</p></div>
+ <div style="float:left"><img src="head.jpg" width="275px" style="margin-right:6px"></div>
+ </div>
+ <br><br><br><br>
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Home</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+  <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Team</a>
+  <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Work</a>
+  <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Price</a>
+  
+    <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">Reported Incidents <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="report.html" class="w3-bar-item w3-button">SM Street 4/6, Blair</a>
+      <a href="report.html" class="w3-bar-item w3-button">Selex Mall, Seventh Avenue</a>
+      <a href="report.html" class="w3-bar-item w3-button">Meher Street, Kochi</a>
+    </div>
+  </div>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+ </div>
+
+
+<h2 align="center">NON GOVERNMENT ORGANIZATIONS</h2>
+<h4 color="#FFFFFF">The different NGOs who provides the internships are.....</h4>
+
+<ul>
+  <li><a href="#home">NGO 1</a></li>
+  <li><a href="#news">NGO 2</a></li>
+  <li><a href="#contact">NG0 3</a></li>
+  <li><a href="#about">NGO 4</a></li>
+</ul>
+
+</body>
+</html>
